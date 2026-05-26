@@ -1,0 +1,17 @@
+# Dbio MCP server configuration for OpenAI Codex CLI
+# Copy this into your ~/.codex/config.toml (merge with existing config)
+# Then set DBIO_API_KEY env var (get key at https://dbio.ai/settings/api-keys)
+
+[mcp_servers.dbio]
+url = "https://mcp.dbio.ai/mcp"
+bearer_token_env_var = "DBIO_API_KEY"
+
+# For Vietnam (dbio.vn / VND / SePay), use:
+# [mcp_servers.dbio]
+# url = "https://mcp.dbio.vn/mcp"
+# bearer_token_env_var = "DBIO_API_KEY"
+
+# For self-hosted / enterprise:
+# [mcp_servers.dbio]
+# url = "https://mcp.your-company.com/mcp"
+# bearer_token_env_var = "DBIO_ENTERPRISE_KEY"
